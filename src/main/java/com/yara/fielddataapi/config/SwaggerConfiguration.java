@@ -25,7 +25,7 @@ public class SwaggerConfiguration {
     }
 
     public ApiInfo apiEndPointInfo(){
-        return new ApiInfoBuilder().title("Spring Boot Rest API")
+        return new ApiInfoBuilder().title("Field data API")
                 .description("Field data API")
                 .contact(new Contact("Fernando", "", ""))
                 .version("0.0.1-SNAPSHOT")
