@@ -1,0 +1,12 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      database: field_api_local
+      username: root
+      password: password
+      authentication-database: admin
+
+com.yara.fielddataapi:
+      agromonitoring:
+        host: "https://samples.openweathermap.org/agro/1.0/weather/history?polyid=5aaa8052cbbbb5000b73ff66&start=1485703465&end=1485780512&&appid=bb0664ed43c153aa072c760594d775a7"

@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  mongo:
+    image: mongo:4.0.21
+    container_name: mongo-field
+    hostname: mongo-field
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+    ports:
+      - 27017:27017
+    networks:
+      - "field-api-service"
+
+networks:
+  field-api-service:
+    driver: bridge
