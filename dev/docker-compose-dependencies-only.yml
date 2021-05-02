@@ -3,8 +3,8 @@ version: '3.4'
 services:
   mongo:
     image: mongo:4.0.21
-    container_name: mongo-field
-    hostname: mongo-field
+    container_name: mongo-fieldapi
+    hostname: mongo-fieldapi
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: password

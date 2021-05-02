@@ -4,8 +4,10 @@ services:
   java:
     build:
       context: ../
-    container_name: fieldapi
-    hostname: fieldapi
+    container_name: java-fieldapi
+    hostname: java-fieldapi
+    environment:
+      - spring_profiles_active=live
     ports:
       - 8080:8080
     depends_on:
@@ -15,8 +17,8 @@ services:
 
   mongo:
     image: mongo:4.0.21
-    container_name: mongo-field
-    hostname: mongo-field
+    container_name: mongo-fieldapi
+    hostname: mongo-fieldapi
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: password
