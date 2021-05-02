@@ -19,20 +19,23 @@ third partner API from OpenWeather Agro Monitoring.
 
 1. Clone the project
 
-2. Go to directory `./fieldapi/dev`
-
-3. Build docker images
+2. With a correctly configured Maven, create an executable jar file
 
 ```shellscript
-$ docker-compose build
+$  mvn clean package
 ```
+
+3. Go to directory `./fieldapi/dev`
+
+4. Build and run docker compose
+
+```shellscript
+$  docker-compose up --build
+```
+> Ps: This command will build the images, create the defined containers and start it in one command
+
 > Ps: This directory also contains the `docker-compose-dependencies-only` in case you want to run the dependencies from docker, but the application from IDE or command prompt
 
-4. Run docker
-
-```shellscript
-docker-compose up
-```
 5. Check if the application is up and running:
 
 ```
